@@ -15,7 +15,7 @@ jobs:
           password: ${{ secrets.SERVER_PASSWORD }}
           script_stop: true
           command_timeout: 200m
-          script: /
+          script: 
             git pull
             cd cocoboom_server/
             docker compose build --force-rm --no-cach --compress
